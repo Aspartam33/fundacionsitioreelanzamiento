@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+.btn-dona{
+float:right; margin-right:30px; background:#1f2f50; border-radius:0 0 0 15px; width:85px; height:35px; border-style:none;
+}
+.btn-dona span{
+	color:#dadbda; font-family:"Oswald",sans-serif; font-size:16px;
+}
+header{
+	position: absolute;
+border:1px solid #1f2f50;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	background: rgba(178,178,178, 0.7);
+	width: 100%;
+	justify-content:space-between;
+	box-sizing: border-box;
+	z-index: 2;
+	
+}
+header .logo{
+	top: 0;
+	left: 0;
+	padding: 0;
+}
+header .logo img{
+	
+	line-height: 100px;
+	float: left;
+	width: 200px;
+	height: 100px;
+	margin: 0;
+}
+header nav{
+	float: center;
+}
+header nav ul{
+	margin: 0;
+	display: flex;
+	padding: 10px;
+	font-weight: bold;
+	font-style: inherit;
+	color:#1f2f50;
+	
+
+}
+header nav ul li{
+	list-style:none;
+	position: relative;
+	
+}
+
+
+header nav ul li.sub-menu:before{
+	content: '\f107';
+	font-family: fontAwesome;
+	position: absolute;
+	line-height: 50px;
+	color: #000;
+	right: 5px;
+}
+header nav ul li.active.sub-menu:before{
+	content: '\f106';
+	font-family: fontAwesome;
+	
+}
+header nav ul li ul{
+	position: absolute;
+	left: 0;
+	background: #4297D3;
+	display: none;
+	z-index: 100;
+}
+
+
+header nav ul li:hover ul{
+	display: block;
+}
+
+header nav ul li ul li{
+	display: block;
+	width: 200px;
+	font-size: 10px;
+	font-weight: lighter;
+}
+header nav ul li ul li a{
+	font-size:15px;
+}
+header nav ul li a{
+	height: 50px;
+	line-height: 50px;
+	padding: 0 20px;
+	color: #1f2f50;
+	text-decoration: none;
+	display: block;
+margin-left:12px;
+font-family:"oswald",sans-serif;
+font-size:20px;
+font-weight:600px;
+}
+header nav ul li a:hover{
+	color: #dadbda;
+	background:#3b85bb;
+	
+
+}
+header .top-bar{
+	text-align: right;
+
+}
+header .top-bar #donar{
+	border-radius: 0px 0px 0px 20px;
+	background: #233a5e;
+	font-size: 21px;
+	color: #dadbda;
+	margin-right: 20px;
+	line-height: 50px;
+	height: 200px;
+
+}
+
+.menu-toggle{
+	color: #000000;
+	float: right;
+	font-size: 24px;
+	cursor: pointer;
+	line-height: 50px;
+	display: none;
+}
+
+@media (max-width: 991px){
+	
+	
+	header nav ul li.active ul{
+	display: block;
+}
+	
+.btn-dona{
+	visibility:hidden;
+}
+	
+header .logo img{width: 150px;
+height: 50px;}
+
+	header{
+		padding: 0 20px;	}
+	.menu-toggle{
+		display: block;
+	}
+	header nav{
+		position: absolute;
+		width: 100%;
+		height: calc(100vh - 50px);
+		background:#3573a5;
+		top: 50px;
+		left:-100%;
+		transition: 0.5s;
+	}
+	header nav ul{
+		display: block;
+		text-align: center;
+	}
+	header nav ul a{
+		border-bottom: 1px solid white;
+	}
+	header nav ul li a:hover{
+	color: #000;
+	background:#fff;
+	
+
+}
+	header .active{
+		left: 0;	
+	}
+	header nav ul li.active ul{
+		position: relative;
+		background-position: #3b85bb;
+	}
+	header nav ul li ul li{
+		width: 100%;
+	}
+}
+
+.tabs{
+	overflow: hidden;
+	border:1px solid #000;
+	background-color: 
+	#2b547e
+}
+.tabs button{
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition:0.3s;
+}
+.tabs button:hover{
+	background-color: #3b85bb;
+
+}
+.tabs button.active{
+
+	background-color: #4297d3;
+}
+.banner{
+	height:80vh;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	animation:banner 10s infinite;
+
+}
+
+
+@keyframes banner{
+		0%,20%{
+		background-image:  url(../Imagenes/Programas/investigacion/009.jpg);
+	}
+	35%, 50%{
+		background-image: url(../Imagenes/Programas/investigacion/010.jpg);
+	}
+	55%,70%{
+		background-image: url(../Imagenes/Programas/investigacion/011.jpg);
+	}
+		75%,100%{
+		background-image: url(../Imagenes/Programas/investigacion/012.jpg);
+	}}
+	.titulo-seccion {background: #b2b2b2;
+
+
+}
+.titulo-seccion p{
+	text-align: center;
+	color:#233a5e;
+	font-size: 30pt;
+	font-family: 'oswald', sans-serif ;
+}
+.honorarios-class h1{
+	font-family: 'oswald';
+	font-size: 30pt;
+	color: #fff;
+	margin-left: 100px;
+
+}
+.honorarios-single img{
+	margin-left: 100px;
+	border-radius: 100px;
+}
+.honorarios-single p{
+	font-family: 'Poppins';
+	color: #fff;
+	margin-left: 100px;
+	display: inline-block;
+}
+.fundadores-class h1{
+	font-family: 'oswald';
+	font-size: 30pt;
+	color: #fff;
+	margin-left: 100px;
+
+}
+.fundadores-single img{
+	margin-left: 100px;
+	border-radius: 100px;
+}
+.fundadores-single p{
+	font-family: 'Poppins';
+	color: #fff;
+	margin-left: 100px;
+	display: inline-block;
+	text-align:  center;
+}
+.secretaria-class h1{
+	font-family: 'oswald';
+	font-size: 30pt;
+	color: #48ded2;
+	margin-left: 100px;
+
+}
+.secretaria-img img{
+	margin-left: 100px;
+	border-radius: 100px;
+}
+.secretaria-text p{
+	font-family: 'Poppins';
+	color: #2b547e;
+	margin-left: 100px;
+	text-indent: 2em;
+	text-align:  justify;
+	margin-right: 100px; 
+	margin-bottom: 100px;
+}
+.secretaria-text h3{
+	font-family: 'Poppins';
+	color: #2b547e;
+	margin-left: 100px;
+	
+	text-align:  justify;
+	margin-right: 100px; 
+	
+}
+.equipo-class h1{
+	font-family: 'oswald';
+	font-size: 30pt;
+	color: #48ded2;
+	margin-left: 100px;
+
+}
+.equipo-single img{
+	margin-left: 150px;
+	border-radius: 100px;
+}
+.equipo-single p{
+	font-family: 'Poppins';
+	color: #fff;
+	
+	
+	text-align:center;
+	
+	
+}
+
+.equipo-single1 img{
+	margin-left: 150px;
+	
+}
+.equipo-single1 p{
+	font-family: 'Poppins';
+	color: #fff;
+	
+	
+	text-align:center;
+	
+	
+}
+.comite-section h1{
+	font-family: 'oswald';
+	font-size: 30pt;
+	color: #2b547e;
+	margin-left: 100px;
+
+}
+.comite-single img{
+	margin-left: 150px;
+	border-radius: 100px;
+}
+.comite-single p{
+	font-family: 'Poppins';
+	color: #2b547e;
+	
+	
+	text-align:center;
+	
+	
+}
+
+#footer{
+	background: #233a5e;
+
+}
+#footer h5{
+	padding-left: 10px;
+
+	padding-bottom: 6px;
+	margin-bottom: 20px;
+	color: #dadbda;
+	font-family: 'oswald' sans-serif;
+	text-transform: uppercase;
+}
+#footer a{
+	color: #dadbda;
+	text-decoration: none;
+	background-color: transparent;
+	font-family: 'oswald' sans-serif;
+	text-transform: uppercase;
+}
+#footer ul.social li{
+	padding: 3px 0;
+
+}
+#footer ul.social li a i{
+	margin-right: 5px;
+	font-size: 25px;
+	transition:.5s all ease;
+}
+#footer ul.social li:hover a i{
+	font-size: 30px;
+	margin-top: -10px;
+
+}
+#footer ul.social li a{
+	color:#48ded2;
+}
+#footer ul.quick-links li a{
+	color:#dadbda;
+}
+#footer ul.social li:hover{
+	color: #0dc59d;
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+
+}
+#footer ul.quick-links li:hover a i{
+	font-weight: 700;
+}
+.busca1{
+	display: inline-block;
+	position: relative;
+}
+.busca1:before{
+font-family: 'FontAwesome';
+content: '\f002';
+position: absolute;
+left: 150px;
+color: #233a5e;
+}
+.busca1 input{
+	background: #48ded2;
+	border-radius: 10px;
+	border: 0;
+
+}
+
+.menu{
+	text-decoration: none;
+	list-style: none;
+	margin: 0 auto;
+
+	padding-top: 50px;
+}
+.menu li{
+	display: inline-block;
+
+}
+.menu-footer{
+	width: 100wh;
+}

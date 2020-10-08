@@ -1,0 +1,46 @@
+.jumbotron{
+	background-image:  url(../img/BustoConvit2.jpg);
+	background-size: cover;
+
+}
+.jumbotron h1{
+	
+	font-size: 40px;  color: #233a5e;;  
+font-family: 'oswald', sans-serif ; font-weight: 500; text-align: center;
+}
+.breadcrumb{
+	background: #fff;
+	box-shadow: 1px 1px 20px 0 #dadbda;
+}
+.breadcrumb p{
+	color: red;
+}
+.contact{
+	padding-bottom: 100px;
+}
+.contact .main{
+	background: #fff;
+	box-shadow: 1px 1px 20px 0 #b2b2b2;
+}
+.control .main h3{
+	font-size: 20px;
+	font-weight: 500;
+	font-family: "oswald", sans-serif;
+	color: #233a5e;
+	margin: 0;
+	margin-bottom: 20px;
+}
+.contact .form-control{
+	padding: 25px;
+	font-size: 13px;
+	background: #c1bcbd;
+	border: 0;
+	border-radius: 5px;
+}
+.contact button.btn{
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 15px;
+	background: #48ded2;
+	color: #000;
+}
